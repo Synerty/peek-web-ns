@@ -49,6 +49,38 @@ var PeekViewBrokerService = (function () {
         }
         throw new Error("Unhandled platform " + peek_core_config_service_1.PeekCoreConfigService.PLATFORM_TARGET);
     };
+    PeekViewBrokerService.CONFIGURE_STYLE_URLS = function (metadata) {
+        if (metadata === void 0) { metadata = {}; }
+        if (metadata.styleUrls == null || metadata.styleUrls.length == 0) {
+            return;
+        }
+        // We don't do anything for web, webpack takes care of this
+        if (peek_core_config_service_1.PeekCoreConfigService.IS_WEB()) {
+            return;
+        }
+        if (metadata.styleUrls.length == null) {
+            throw new Error('templateUrl is missing,' +
+                ' it must = an array of the web css file, containing in ".web." ');
+        }
+        if (peek_core_config_service_1.PeekCoreConfigService.IS_MOBILE_NATIVE()) {
+            if (metadata.moduleFilename == null) {
+                throw new Error('moduleFilename is missing,' +
+                    ' it must = module.filename,' +
+                    ' if it is, then this is not compiled by NativeScript');
+            }
+            var newStyleUrls = [];
+            for (var _i = 0, _a = metadata.styleUrls; _i < _a.length; _i++) {
+                var styleUrl = _a[_i];
+                var path = PeekViewBrokerService.GET_PATH_FROM_MODULE_PATH(metadata.moduleFilename);
+                // Add on the css file name
+                path += styleUrl.replace(".web.", ".ns.");
+                newStyleUrls.push(path);
+            }
+            metadata.styleUrls = newStyleUrls;
+            return; // State handled
+        }
+        throw new Error("Unhandled platform " + peek_core_config_service_1.PeekCoreConfigService.PLATFORM_TARGET);
+    };
     return PeekViewBrokerService;
 }());
 exports.PeekViewBrokerService = PeekViewBrokerService;

@@ -61,4 +61,47 @@ export class PeekViewBrokerService {
 
         throw new Error("Unhandled platform " + PeekCoreConfigService.PLATFORM_TARGET);
     }
+
+    public static CONFIGURE_STYLE_URLS(metadata: any = {}) {
+        if (metadata.styleUrls == null || metadata.styleUrls.length == 0) {
+            return;
+        }
+
+        // We don't do anything for web, webpack takes care of this
+        if (PeekCoreConfigService.IS_WEB()) {
+            return;
+        }
+
+        if (metadata.styleUrls.length == null) {
+            throw new Error('templateUrl is missing,' +
+                ' it must = an array of the web css file, containing in ".web." ');
+        }
+
+
+        if (PeekCoreConfigService.IS_MOBILE_NATIVE()) {
+            if (metadata.moduleFilename == null) {
+                throw new Error('moduleFilename is missing,' +
+                    ' it must = module.filename,' +
+                    ' if it is, then this is not compiled by NativeScript');
+            }
+
+            let newStyleUrls = [];
+
+            for (let styleUrl of metadata.styleUrls) {
+
+                let path = PeekViewBrokerService.GET_PATH_FROM_MODULE_PATH(metadata.moduleFilename);
+
+                // Add on the css file name
+                path += styleUrl.replace(".web.", ".ns.");
+
+                newStyleUrls.push(path);
+            }
+
+            metadata.styleUrls = newStyleUrls;
+            return; // State handled
+        }
+
+
+        throw new Error("Unhandled platform " + PeekCoreConfigService.PLATFORM_TARGET);
+    }
 }

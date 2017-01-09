@@ -9,6 +9,7 @@ var DecoratorUtils = (function () {
     DecoratorUtils.getMetadata = function (metadata, customDecoratorMetadata) {
         if (metadata === void 0) { metadata = {}; }
         peek_view_broker_service_1.PeekViewBrokerService.CONFIGURE_TEMPLATE_URL(metadata);
+        peek_view_broker_service_1.PeekViewBrokerService.CONFIGURE_STYLE_URLS(metadata);
         return metadata;
     };
     DecoratorUtils.annotateComponent = function (cls, metadata, customDecoratorMetadata) {

@@ -9,6 +9,7 @@ export class DecoratorUtils {
     public static getMetadata(metadata: any = {}, customDecoratorMetadata?: any) {
 
         PeekViewBrokerService.CONFIGURE_TEMPLATE_URL(metadata);
+        PeekViewBrokerService.CONFIGURE_STYLE_URLS(metadata);
         return metadata;
     }
 
