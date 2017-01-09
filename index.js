@@ -1,4 +1,6 @@
 "use strict";
+var peek_module_factory_loader_1 = require("./src/peek-web-ns/factories/peek-module-factory-loader");
+exports.PeekModuleFactoryLoader = peek_module_factory_loader_1.PeekModuleFactoryLoader;
 var peek_router_module_1 = require("./src/peek-web-ns/modules/peek-router.module");
 exports.PeekRouterModule = peek_router_module_1.PeekRouterModule;
 var peek_core_config_service_1 = require("./src/peek-web-ns/services/peek-core-config.service");
@@ -7,3 +9,4 @@ var peek_view_broker_service_1 = require("./src/peek-web-ns/services/peek-view-b
 exports.PeekViewBrokerService = peek_view_broker_service_1.PeekViewBrokerService;
 var peek_component_ts_1 = require("./src/peek-web-ns/decorators/peek-component-ts");
 exports.PeekComponent = peek_component_ts_1.PeekComponent;
+//# sourceMappingURL=index.js.map
