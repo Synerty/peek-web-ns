@@ -1,6 +1,4 @@
 "use strict";
-var peek_module_factory_loader_1 = require("./src/peek-web-ns/factories/peek-module-factory-loader");
-exports.PeekModuleFactoryLoader = peek_module_factory_loader_1.PeekModuleFactoryLoader;
 var peek_router_module_1 = require("./src/peek-web-ns/modules/peek-router.module");
 exports.PeekRouterModule = peek_router_module_1.PeekRouterModule;
 var peek_core_config_service_1 = require("./src/peek-web-ns/services/peek-core-config.service");
