@@ -1,3 +1,4 @@
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7,30 +8,30 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { AppComponent } from './app.component';
+var platform_browser_1 = require("@angular/platform-browser");
+var core_1 = require("@angular/core");
+var forms_1 = require("@angular/forms");
+var http_1 = require("@angular/http");
+var app_component_1 = require("./app.component");
 var AppModule = (function () {
     function AppModule() {
     }
     return AppModule;
 }());
 AppModule = __decorate([
-    NgModule({
+    core_1.NgModule({
         declarations: [
-            AppComponent
+            app_component_1.AppComponent
         ],
         imports: [
-            BrowserModule,
-            FormsModule,
-            HttpModule
+            platform_browser_1.BrowserModule,
+            forms_1.FormsModule,
+            http_1.HttpModule
         ],
         providers: [],
-        bootstrap: [AppComponent]
+        bootstrap: [app_component_1.AppComponent]
     }),
     __metadata("design:paramtypes", [])
 ], AppModule);
-export { AppModule };
+exports.AppModule = AppModule;
 //# sourceMappingURL=/home/peek/project/peek-web-ns/src/app/app.module.js.map

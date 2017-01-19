@@ -1,10 +1,11 @@
-import './polyfills.ts';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { enableProdMode } from '@angular/core';
-import { environment } from './environments/environment';
-import { AppModule } from './app/app.module';
-if (environment.production) {
-    enableProdMode();
+"use strict";
+require("./polyfills.ts");
+var platform_browser_dynamic_1 = require("@angular/platform-browser-dynamic");
+var core_1 = require("@angular/core");
+var environment_1 = require("./environments/environment");
+var app_module_1 = require("./app/app.module");
+if (environment_1.environment.production) {
+    core_1.enableProdMode();
 }
-platformBrowserDynamic().bootstrapModule(AppModule);
+platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule);
 //# sourceMappingURL=/home/peek/project/peek-web-ns/src/main.js.map

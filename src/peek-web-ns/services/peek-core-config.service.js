@@ -1,4 +1,5 @@
 // http://angularjs.blogspot.com.au/2016/03/code-reuse-in-angular-2-native-mobile.html
+"use strict";
 var PeekCoreConfigService = (function () {
     function PeekCoreConfigService() {
     }
@@ -11,7 +12,6 @@ var PeekCoreConfigService = (function () {
     };
     return PeekCoreConfigService;
 }());
-export { PeekCoreConfigService };
 // supported platforms
 PeekCoreConfigService.PLATFORMS = {
     WEB: 'web',
@@ -19,4 +19,5 @@ PeekCoreConfigService.PLATFORMS = {
 };
 // current target (default to web)
 PeekCoreConfigService.PLATFORM_TARGET = PeekCoreConfigService.PLATFORMS.WEB;
+exports.PeekCoreConfigService = PeekCoreConfigService;
 //# sourceMappingURL=/home/peek/project/peek-web-ns/src/peek-web-ns/services/peek-core-config.service.js.map

@@ -1,5 +1,6 @@
+"use strict";
 // http://angularjs.blogspot.com.au/2016/03/code-reuse-in-angular-2-native-mobile.html
-import { PeekCoreConfigService } from "./peek-core-config.service";
+var peek_core_config_service_1 = require("./peek-core-config.service");
 var PeekViewBrokerService = (function () {
     function PeekViewBrokerService() {
     }
@@ -26,7 +27,7 @@ var PeekViewBrokerService = (function () {
     PeekViewBrokerService.CONFIGURE_TEMPLATE_URL = function (metadata) {
         if (metadata === void 0) { metadata = {}; }
         // We don't do anything for web, webpack takes care of this
-        if (PeekCoreConfigService.IS_WEB()) {
+        if (peek_core_config_service_1.PeekCoreConfigService.IS_WEB()) {
             // Webpack ts-loader?? turns templateUrl:... into template: require(...
             return;
         }
@@ -34,7 +35,7 @@ var PeekViewBrokerService = (function () {
             throw new Error('templateUrl is missing,' +
                 ' it must = the web html file, ending in ".web.html" ');
         }
-        if (PeekCoreConfigService.IS_MOBILE_NATIVE()) {
+        if (peek_core_config_service_1.PeekCoreConfigService.IS_MOBILE_NATIVE()) {
             if (metadata.moduleFilename == null) {
                 throw new Error('moduleFilename is missing,' +
                     ' it must = module.filename,' +
@@ -46,7 +47,7 @@ var PeekViewBrokerService = (function () {
             metadata.templateUrl = path;
             return; // State handled
         }
-        throw new Error("Unhandled platform " + PeekCoreConfigService.PLATFORM_TARGET);
+        throw new Error("Unhandled platform " + peek_core_config_service_1.PeekCoreConfigService.PLATFORM_TARGET);
     };
     PeekViewBrokerService.CONFIGURE_STYLE_URLS = function (metadata) {
         if (metadata === void 0) { metadata = {}; }
@@ -54,14 +55,14 @@ var PeekViewBrokerService = (function () {
             return;
         }
         // We don't do anything for web, webpack takes care of this
-        if (PeekCoreConfigService.IS_WEB()) {
+        if (peek_core_config_service_1.PeekCoreConfigService.IS_WEB()) {
             return;
         }
         if (metadata.styleUrls.length == null) {
             throw new Error('templateUrl is missing,' +
                 ' it must = an array of the web css file, containing in ".web." ');
         }
-        if (PeekCoreConfigService.IS_MOBILE_NATIVE()) {
+        if (peek_core_config_service_1.PeekCoreConfigService.IS_MOBILE_NATIVE()) {
             if (metadata.moduleFilename == null) {
                 throw new Error('moduleFilename is missing,' +
                     ' it must = module.filename,' +
@@ -78,9 +79,9 @@ var PeekViewBrokerService = (function () {
             metadata.styleUrls = newStyleUrls;
             return; // State handled
         }
-        throw new Error("Unhandled platform " + PeekCoreConfigService.PLATFORM_TARGET);
+        throw new Error("Unhandled platform " + peek_core_config_service_1.PeekCoreConfigService.PLATFORM_TARGET);
     };
     return PeekViewBrokerService;
 }());
-export { PeekViewBrokerService };
+exports.PeekViewBrokerService = PeekViewBrokerService;
 //# sourceMappingURL=/home/peek/project/peek-web-ns/src/peek-web-ns/services/peek-view-broker.service.js.map
