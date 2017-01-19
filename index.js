@@ -1,6 +1,6 @@
 "use strict";
-var peek_forms_module_1 = require("./src/peek-web-ns/modules/peek-forms.module");
-exports.PeekModuleFactory = peek_forms_module_1.PeekModuleFactory;
+var peek_module_factory_1 = require("./src/peek-web-ns/factories/peek-module.factory");
+exports.PeekModuleFactory = peek_module_factory_1.PeekModuleFactory;
 var peek_core_config_service_1 = require("./src/peek-web-ns/services/peek-core-config.service");
 exports.PeekCoreConfigService = peek_core_config_service_1.PeekCoreConfigService;
 var peek_view_broker_service_1 = require("./src/peek-web-ns/services/peek-view-broker.service");

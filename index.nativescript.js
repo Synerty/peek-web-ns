@@ -8,4 +8,4 @@
  */
 var module_loader_ns_factory_1 = require("./src/peek-web-ns/factories/module-loader.ns.factory");
 exports.PeekModuleFactoryLoader = module_loader_ns_factory_1.PeekModuleFactoryLoader;
-//# sourceMappingURL=/home/peek/project/peek-web-ns/nativescript.js.map
+//# sourceMappingURL=/home/peek/project/peek-web-ns/index.nativescript.js.map
