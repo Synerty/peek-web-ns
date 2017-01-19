@@ -17,7 +17,8 @@ var PeekModuleFactory = (function () {
                 return platform_browser_1.BrowserModule;
             }
             else if (peek_core_config_service_1.PeekCoreConfigService.IS_MOBILE_NATIVE()) {
-                return require("nativescript-angular")["NativeScriptModule"];
+                var Mod = require("nativescript-angular")["NativeScriptModule"];
+                return Mod;
             }
             else {
                 throw new Error("Unhandled condition " + peek_core_config_service_1.PeekCoreConfigService.PLATFORM_TARGET);
@@ -35,7 +36,8 @@ var PeekModuleFactory = (function () {
                 return forms_1.FormsModule;
             }
             else if (peek_core_config_service_1.PeekCoreConfigService.IS_MOBILE_NATIVE()) {
-                return require("nativescript-angular")["NativeScriptFormsModule"];
+                var Mod = require("nativescript-angular")["NativeScriptFormsModule"];
+                return Mod;
             }
             else {
                 throw new Error("Unhandled condition " + peek_core_config_service_1.PeekCoreConfigService.PLATFORM_TARGET);
@@ -53,7 +55,8 @@ var PeekModuleFactory = (function () {
                 return router_1.RouterModule;
             }
             else if (peek_core_config_service_1.PeekCoreConfigService.IS_MOBILE_NATIVE()) {
-                return require("nativescript-angular")["NativeScriptRouterModule"];
+                var Mod = require("nativescript-angular")["NativeScriptRouterModule"];
+                return Mod;
             }
             else {
                 throw new Error("Unhandled condition " + peek_core_config_service_1.PeekCoreConfigService.PLATFORM_TARGET);

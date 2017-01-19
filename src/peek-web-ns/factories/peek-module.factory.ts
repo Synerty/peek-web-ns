@@ -16,7 +16,8 @@ export class PeekModuleFactory {
             return (<any>BrowserModule);
 
         } else if (PeekCoreConfigService.IS_MOBILE_NATIVE()) {
-            return require("nativescript-angular")["NativeScriptModule"];
+            let Mod = require("nativescript-angular")["NativeScriptModule"];
+            return Mod;
 
         } else {
             throw new Error(`Unhandled condition ${PeekCoreConfigService.PLATFORM_TARGET}`);
@@ -31,7 +32,8 @@ export class PeekModuleFactory {
             return (<any>FormsModule);
 
         } else if (PeekCoreConfigService.IS_MOBILE_NATIVE()) {
-            return require("nativescript-angular")["NativeScriptFormsModule"];
+            let Mod = require("nativescript-angular")["NativeScriptFormsModule"];
+            return Mod;
 
         } else {
             throw new Error(`Unhandled condition ${PeekCoreConfigService.PLATFORM_TARGET}`);
@@ -46,7 +48,8 @@ export class PeekModuleFactory {
             return (<any>RouterModule);
 
         } else if (PeekCoreConfigService.IS_MOBILE_NATIVE()) {
-            return require("nativescript-angular")["NativeScriptRouterModule"];
+            let Mod = require("nativescript-angular")["NativeScriptRouterModule"];
+            return Mod;
 
         } else {
             throw new Error(`Unhandled condition ${PeekCoreConfigService.PLATFORM_TARGET}`);
