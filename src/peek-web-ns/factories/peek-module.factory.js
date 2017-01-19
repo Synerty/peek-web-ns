@@ -1,33 +1,10 @@
 "use strict";
 var forms_1 = require("@angular/forms");
 var router_1 = require("@angular/router");
-var platform_browser_1 = require("@angular/platform-browser");
 var peek_core_config_service_1 = require("../services/peek-core-config.service");
 var PeekModuleFactory = (function () {
     function PeekModuleFactory() {
     }
-    Object.defineProperty(PeekModuleFactory, "PlatformModules", {
-        /**
-         * Provide a cross platform Platform module.
-         * For the browser this is the "BrowserModule"
-         * For NativeScript this is the "NativeScriptModule"
-         */
-        get: function () {
-            if (peek_core_config_service_1.PeekCoreConfigService.IS_WEB()) {
-                return [platform_browser_1.BrowserModule];
-            }
-            else if (peek_core_config_service_1.PeekCoreConfigService.IS_MOBILE_NATIVE()) {
-                // NativeScriptModule
-                var Mod = require("nativescript-angular")["NativeScriptModule"];
-                return [Mod];
-            }
-            else {
-                throw new Error("Unhandled condition " + peek_core_config_service_1.PeekCoreConfigService.PLATFORM_TARGET);
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
     Object.defineProperty(PeekModuleFactory, "FormsModules", {
         /**
          * Provide a cross platform Browser module
