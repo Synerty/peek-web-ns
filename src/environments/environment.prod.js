@@ -1,5 +1,4 @@
-"use strict";
-exports.environment = {
+export var environment = {
     production: true
 };
-//# sourceMappingURL=environment.prod.js.map
+//# sourceMappingURL=/home/peek/project/peek-web-ns/src/environments/environment.prod.js.map

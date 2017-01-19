@@ -1,31 +1,30 @@
 /* tslint:disable:no-unused-variable */
-"use strict";
-var testing_1 = require("@angular/core/testing");
-var app_component_1 = require("./app.component");
+import { TestBed, async } from '@angular/core/testing';
+import { AppComponent } from './app.component';
 describe('AppComponent', function () {
     beforeEach(function () {
-        testing_1.TestBed.configureTestingModule({
+        TestBed.configureTestingModule({
             declarations: [
-                app_component_1.AppComponent
+                AppComponent
             ],
         });
-        testing_1.TestBed.compileComponents();
+        TestBed.compileComponents();
     });
-    it('should create the app', testing_1.async(function () {
-        var fixture = testing_1.TestBed.createComponent(app_component_1.AppComponent);
+    it('should create the app', async(function () {
+        var fixture = TestBed.createComponent(AppComponent);
         var app = fixture.debugElement.componentInstance;
         expect(app).toBeTruthy();
     }));
-    it("should have as title 'app works!'", testing_1.async(function () {
-        var fixture = testing_1.TestBed.createComponent(app_component_1.AppComponent);
+    it("should have as title 'app works!'", async(function () {
+        var fixture = TestBed.createComponent(AppComponent);
         var app = fixture.debugElement.componentInstance;
         expect(app.title).toEqual('app works!');
     }));
-    it('should render title in a h1 tag', testing_1.async(function () {
-        var fixture = testing_1.TestBed.createComponent(app_component_1.AppComponent);
+    it('should render title in a h1 tag', async(function () {
+        var fixture = TestBed.createComponent(AppComponent);
         fixture.detectChanges();
         var compiled = fixture.debugElement.nativeElement;
         expect(compiled.querySelector('h1').textContent).toContain('app works!');
     }));
 });
-//# sourceMappingURL=app.component.spec.js.map
+//# sourceMappingURL=/home/peek/project/peek-web-ns/src/app/app.component.spec.js.map

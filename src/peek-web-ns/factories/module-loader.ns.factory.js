@@ -1,12 +1,14 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var core_1 = require("@angular/core");
-var file_system_1 = require("file-system");
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+import { Injectable, Compiler } from "@angular/core";
+import { path, knownFolders } from "file-system";
 var SEPARATOR = "#";
 var PeekModuleFactoryLoader = (function () {
     function PeekModuleFactoryLoader(compiler) {
@@ -31,10 +33,11 @@ var PeekModuleFactoryLoader = (function () {
     return PeekModuleFactoryLoader;
 }());
 PeekModuleFactoryLoader = __decorate([
-    core_1.Injectable()
+    Injectable(),
+    __metadata("design:paramtypes", [Compiler])
 ], PeekModuleFactoryLoader);
-exports.PeekModuleFactoryLoader = PeekModuleFactoryLoader;
+export { PeekModuleFactoryLoader };
 function getAbsolutePath(relativePath) {
-    return file_system_1.path.normalize(file_system_1.path.join(file_system_1.knownFolders.currentApp().path, relativePath));
+    return path.normalize(path.join(knownFolders.currentApp().path, relativePath));
 }
-//# sourceMappingURL=module-loader.ns.factory.js.map
+//# sourceMappingURL=/home/peek/project/peek-web-ns/src/peek-web-ns/factories/module-loader.ns.factory.js.map
