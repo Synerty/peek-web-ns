@@ -11,13 +11,14 @@ export class PeekModuleFactory {
      * For the browser this is the "BrowserModule"
      * For NativeScript this is the "NativeScriptModule"
      */
-    static get PlatformModule(): ModuleWithProviders {
+    static get PlatformModules(): ModuleWithProviders[] {
         if (PeekCoreConfigService.IS_WEB()) {
-            return (<any>BrowserModule);
+            return [(<any>BrowserModule)];
 
         } else if (PeekCoreConfigService.IS_MOBILE_NATIVE()) {
+            // NativeScriptModule
             let Mod = require("nativescript-angular")["NativeScriptModule"];
-            return Mod;
+            return [Mod];
 
         } else {
             throw new Error(`Unhandled condition ${PeekCoreConfigService.PLATFORM_TARGET}`);
@@ -27,13 +28,14 @@ export class PeekModuleFactory {
     /**
      * Provide a cross platform Browser module
      */
-    static get FormsModule(): ModuleWithProviders {
+    static get FormsModules(): ModuleWithProviders[] {
         if (PeekCoreConfigService.IS_WEB()) {
-            return (<any>FormsModule);
+            return [(<any>FormsModule)];
 
         } else if (PeekCoreConfigService.IS_MOBILE_NATIVE()) {
+            // NativeScriptFormsModule
             let Mod = require("nativescript-angular")["NativeScriptFormsModule"];
-            return Mod;
+            return [(<any>FormsModule), Mod];
 
         } else {
             throw new Error(`Unhandled condition ${PeekCoreConfigService.PLATFORM_TARGET}`);

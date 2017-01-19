@@ -6,7 +6,7 @@ var peek_core_config_service_1 = require("../services/peek-core-config.service")
 var PeekModuleFactory = (function () {
     function PeekModuleFactory() {
     }
-    Object.defineProperty(PeekModuleFactory, "PlatformModule", {
+    Object.defineProperty(PeekModuleFactory, "PlatformModules", {
         /**
          * Provide a cross platform Platform module.
          * For the browser this is the "BrowserModule"
@@ -14,11 +14,12 @@ var PeekModuleFactory = (function () {
          */
         get: function () {
             if (peek_core_config_service_1.PeekCoreConfigService.IS_WEB()) {
-                return platform_browser_1.BrowserModule;
+                return [platform_browser_1.BrowserModule];
             }
             else if (peek_core_config_service_1.PeekCoreConfigService.IS_MOBILE_NATIVE()) {
+                // NativeScriptModule
                 var Mod = require("nativescript-angular")["NativeScriptModule"];
-                return Mod;
+                return [Mod];
             }
             else {
                 throw new Error("Unhandled condition " + peek_core_config_service_1.PeekCoreConfigService.PLATFORM_TARGET);
@@ -27,17 +28,18 @@ var PeekModuleFactory = (function () {
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(PeekModuleFactory, "FormsModule", {
+    Object.defineProperty(PeekModuleFactory, "FormsModules", {
         /**
          * Provide a cross platform Browser module
          */
         get: function () {
             if (peek_core_config_service_1.PeekCoreConfigService.IS_WEB()) {
-                return forms_1.FormsModule;
+                return [forms_1.FormsModule];
             }
             else if (peek_core_config_service_1.PeekCoreConfigService.IS_MOBILE_NATIVE()) {
+                // NativeScriptFormsModule
                 var Mod = require("nativescript-angular")["NativeScriptFormsModule"];
-                return Mod;
+                return [forms_1.FormsModule, Mod];
             }
             else {
                 throw new Error("Unhandled condition " + peek_core_config_service_1.PeekCoreConfigService.PLATFORM_TARGET);
