@@ -41,7 +41,7 @@ export class PeekModuleFactory {
     /**
      * Provide a cross platform Router module
      */
-    static get RouterModule(): RouterModule {
+    static get RouterModule(): any {
         if (PeekCoreConfigService.IS_WEB()) {
             return (<any>RouterModule);
 
