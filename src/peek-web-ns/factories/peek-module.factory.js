@@ -15,8 +15,9 @@ var PeekModuleFactory = (function () {
             }
             else if (peek_core_config_service_1.PeekCoreConfigService.IS_MOBILE_NATIVE()) {
                 // NativeScriptFormsModule
-                var Mod = require("nativescript-angular")["NativeScriptFormsModule"];
-                return [forms_1.FormsModule, Mod];
+                var Mod = require("nativescript-angular")["NativeScriptModule"];
+                var FMod = require("nativescript-angular/forms")["NativeScriptFormsModule"];
+                return [forms_1.FormsModule, Mod, FMod];
             }
             else {
                 throw new Error("Unhandled condition " + peek_core_config_service_1.PeekCoreConfigService.PLATFORM_TARGET);
