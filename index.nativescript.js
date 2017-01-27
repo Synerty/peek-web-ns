@@ -8,4 +8,6 @@
  */
 var module_loader_ns_factory_1 = require("./src/peek-web-ns/factories/module-loader.ns.factory");
 exports.PeekModuleFactoryLoader = module_loader_ns_factory_1.PeekModuleFactoryLoader;
+var device_info_ns_service_1 = require("./src/peek-web-ns/services/device-info-ns.service");
+exports.DeviceInfoNsService = device_info_ns_service_1.DeviceInfoNsService;
 //# sourceMappingURL=/home/peek/project/peek-web-ns/index.nativescript.js.map

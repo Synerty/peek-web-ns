@@ -7,3 +7,6 @@
  * If you copy the module-loader.ns.factory into the project, it works.
  */
 export {PeekModuleFactoryLoader} from "./src/peek-web-ns/factories/module-loader.ns.factory";
+
+
+export {DeviceInfoNsService} from "./src/peek-web-ns/services/device-info-ns.service";
