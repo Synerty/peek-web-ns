@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // http://angularjs.blogspot.com.au/2016/03/code-reuse-in-angular-2-native-mobile.html
 var utils_1 = require("./utils");
 function PeekComponent(metadata) {
@@ -8,4 +9,3 @@ function PeekComponent(metadata) {
     };
 }
 exports.PeekComponent = PeekComponent;
-//# sourceMappingURL=/home/peek/project/peek-web-ns/src/peek-web-ns/decorators/peek-component-ts.js.map

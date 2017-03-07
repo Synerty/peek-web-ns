@@ -1,5 +1,6 @@
 // http://angularjs.blogspot.com.au/2016/03/code-reuse-in-angular-2-native-mobile.html
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var peek_view_broker_service_1 = require("../services/peek-view-broker.service");
 var _reflect = Reflect;
@@ -22,4 +23,3 @@ var DecoratorUtils = (function () {
     return DecoratorUtils;
 }());
 exports.DecoratorUtils = DecoratorUtils;
-//# sourceMappingURL=/home/peek/project/peek-web-ns/src/peek-web-ns/decorators/utils.js.map

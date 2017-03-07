@@ -1,7 +1,7 @@
 import {Injectable} from "@angular/core";
 import {DeviceInfoService} from "./device-info.interface";
 
-let device = require("platform")["device"];
+let device = require("tns-core-modules/platform")["device"];
 
 @Injectable()
 export class DeviceInfoNsService extends DeviceInfoService {

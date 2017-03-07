@@ -1,7 +1,9 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var forms_1 = require("@angular/forms");
 var router_1 = require("@angular/router");
 var peek_core_config_service_1 = require("../services/peek-core-config.service");
+// let FMod = require("nativescript-angular/forms")["NativeScriptFormsModule"];
 var PeekModuleFactory = (function () {
     function PeekModuleFactory() {
     }
@@ -48,4 +50,3 @@ var PeekModuleFactory = (function () {
     return PeekModuleFactory;
 }());
 exports.PeekModuleFactory = PeekModuleFactory;
-//# sourceMappingURL=/home/peek/project/peek-web-ns/src/peek-web-ns/factories/peek-module.factory.js.map

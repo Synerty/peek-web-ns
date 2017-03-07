@@ -3,6 +3,9 @@ import {FormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
 import {PeekCoreConfigService} from "../services/peek-core-config.service";
 
+            // import {NativeScriptModule as NsMod} from "nativescript-angular";
+            // import {NativeScriptFormsModule as NsFormsMod} from "nativescript-angular/forms";
+            // let FMod = require("nativescript-angular/forms")["NativeScriptFormsModule"];
 
 export class PeekModuleFactory {
 

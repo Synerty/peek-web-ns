@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 require("./polyfills.ts");
 require("zone.js/dist/long-stack-trace-zone");
 require("zone.js/dist/proxy.js");
@@ -18,4 +19,3 @@ var context = require.context('./', true, /\.spec\.ts$/);
 context.keys().map(context);
 // Finally, start Karma to run the tests.
 __karma__.start();
-//# sourceMappingURL=/home/peek/project/peek-web-ns/src/test.js.map

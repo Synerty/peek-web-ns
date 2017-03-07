@@ -1,1 +1,1 @@
-{"version":3,"file":"device-info.interface.js","sourceRoot":"","sources":["device-info.interface.ts"],"names":[],"mappings":";;;;;;;;;;AAAA,sCAAyC;AAEzC,IAAsB,iBAAiB;IACnC;IAEA,CAAC;IAKL,wBAAC;AAAD,CAAC,AARD,IAQC;AARqB,iBAAiB;IADtC,iBAAU,EAAE;;GACS,iBAAiB,CAQtC;AARqB,8CAAiB"}
+{"version":3,"file":"device-info.interface.js","sourceRoot":"","sources":["device-info.interface.ts"],"names":[],"mappings":";;;;;;;;;;;AAAA,sCAAyC;AAEzC,IAAsB,iBAAiB;IACnC;IAEA,CAAC;IAKL,wBAAC;AAAD,CAAC,AARD,IAQC;AARqB,iBAAiB;IADtC,iBAAU,EAAE;;GACS,iBAAiB,CAQtC;AARqB,8CAAiB"}
