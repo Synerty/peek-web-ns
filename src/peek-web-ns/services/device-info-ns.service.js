@@ -15,7 +15,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var device_info_interface_1 = require("./device-info.interface");
-var device = require("tns-core-modules/platform")["device"];
+var device = require("platform")["device"];
 var DeviceInfoNsService = (function (_super) {
     __extends(DeviceInfoNsService, _super);
     function DeviceInfoNsService() {
