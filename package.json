@@ -51,7 +51,7 @@
     "protractor": "~5.1.0",
     "ts-node": "~2.0.0",
     "tslint": "~4.4.2",
-    "typescript": "~2.0.0"
+    "typescript": "~2.0.0",
     "webdriver-manager": "10.2.5",
     "babel-traverse": "6.21.0",
     "babel-types": "6.21.0",
