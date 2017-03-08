@@ -52,3 +52,4 @@ var PeekModuleFactory = (function () {
     return PeekModuleFactory;
 }());
 exports.PeekModuleFactory = PeekModuleFactory;
+//# sourceMappingURL=/home/peek/project/peek-web-ns/src/peek-web-ns/factories/peek-module.factory.js.map

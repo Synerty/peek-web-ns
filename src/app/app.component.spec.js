@@ -29,3 +29,4 @@ describe('AppComponent', function () {
         expect(compiled.querySelector('h1').textContent).toContain('app works!');
     }));
 });
+//# sourceMappingURL=/home/peek/project/peek-web-ns/src/app/app.component.spec.js.map

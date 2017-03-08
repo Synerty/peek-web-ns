@@ -41,3 +41,4 @@ DeviceInfoWebService = __decorate([
     __metadata("design:paramtypes", [])
 ], DeviceInfoWebService);
 exports.DeviceInfoWebService = DeviceInfoWebService;
+//# sourceMappingURL=/home/peek/project/peek-web-ns/src/peek-web-ns/services/device-info-web.service.js.map

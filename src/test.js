@@ -19,3 +19,4 @@ var context = require.context('./', true, /\.spec\.ts$/);
 context.keys().map(context);
 // Finally, start Karma to run the tests.
 __karma__.start();
+//# sourceMappingURL=/home/peek/project/peek-web-ns/src/test.js.map

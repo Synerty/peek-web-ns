@@ -9,3 +9,4 @@ if (environment_1.environment.production) {
     core_1.enableProdMode();
 }
 platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule);
+//# sourceMappingURL=/home/peek/project/peek-web-ns/src/main.js.map

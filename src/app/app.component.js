@@ -21,3 +21,4 @@ AppComponent = __decorate([
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
+//# sourceMappingURL=/home/peek/project/peek-web-ns/src/app/app.component.js.map

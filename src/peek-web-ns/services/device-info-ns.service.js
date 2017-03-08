@@ -40,3 +40,4 @@ DeviceInfoNsService = __decorate([
     __metadata("design:paramtypes", [])
 ], DeviceInfoNsService);
 exports.DeviceInfoNsService = DeviceInfoNsService;
+//# sourceMappingURL=/home/peek/project/peek-web-ns/src/peek-web-ns/services/device-info-ns.service.js.map

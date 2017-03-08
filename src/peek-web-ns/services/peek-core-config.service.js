@@ -21,3 +21,4 @@ PeekCoreConfigService.PLATFORMS = {
 // current target (default to web)
 PeekCoreConfigService.PLATFORM_TARGET = PeekCoreConfigService.PLATFORMS.WEB;
 exports.PeekCoreConfigService = PeekCoreConfigService;
+//# sourceMappingURL=/home/peek/project/peek-web-ns/src/peek-web-ns/services/peek-core-config.service.js.map
