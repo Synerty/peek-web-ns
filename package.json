@@ -8,14 +8,6 @@
     "type": "git",
     "url": "git+https://github.com/Synerty/peek-web-ns.git"
   },
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve --host 0.0.0.0",
-    "lint": "tslint \"src/**/*.ts\"",
-    "test": "ng test",
-    "pree2e": "webdriver-manager update --standalone false --gecko false",
-    "e2e": "protractor"
-  },
   "private": false,
   "dependencies": {
     "@angular/common": "^2.4.0",
@@ -25,43 +17,5 @@
     "nativescript-angular": "^1.4.1"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "^2.4.0",
-    "@angular/compiler": "^2.4.0",
-    "@angular/forms": "^2.4.0",
-    "@angular/http": "^2.4.0",
-    "@angular/platform-browser": "^2.4.0",
-    "@angular/platform-browser-dynamic": "^2.4.0",
-    "@synerty/vortexjs": "^0.2.17",
-    "@angular/cli": "1.0.0-rc.1",
-    "core-js": "^2.4.1",
-    "jquery": "^3.1.1",
-    "nativescript-theme-core": "^0.2.1",
-    "reflect-metadata": "~0.1.8",
-    "rxjs": "^5.0.1",
-    "tns-core-modules": "2.4.4",
-    "ts-helpers": "^1.1.1",
-    "zone.js": "^0.7.2",
-    "@types/jasmine": "2.5.38",
-    "@types/node": "~6.0.60",
-    "codelyzer": "~2.0.0",
-    "jasmine-core": "~2.5.2",
-    "jasmine-spec-reporter": "~3.2.0",
-    "karma": "~1.4.1",
-    "karma-chrome-launcher": "~2.0.0",
-    "karma-cli": "~1.0.1",
-    "karma-jasmine": "~1.1.0",
-    "karma-jasmine-html-reporter": "^0.2.2",
-    "karma-coverage-istanbul-reporter": "^0.2.0",
-    "protractor": "~5.1.0",
-    "ts-node": "~2.0.0",
-    "tslint": "~4.4.2",
-    "typescript": "~2.0.0",
-    "webdriver-manager": "10.2.5",
-    "babel-traverse": "6.21.0",
-    "babel-types": "6.21.0",
-    "babylon": "6.14.1",
-    "lazy": "1.0.11",
-    "nativescript-dev-android-snapshot": "^0.*.*",
-    "nativescript-dev-typescript": "^0.3.2"
   }
 }
