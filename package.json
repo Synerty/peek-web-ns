@@ -10,11 +10,12 @@
   },
   "private": false,
   "dependencies": {
+  },
+  "devDependencies": {
     "@angular/common": "^2.4.0",
     "@angular/core": "^2.4.0",
     "@angular/router": "^3.4.0",
     "file-system": "^2.2.2",
     "nativescript-angular": "^1.4.1"
-  },
-  "devDependencies": {}
+  }
 }
