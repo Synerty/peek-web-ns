@@ -1,7 +1,7 @@
 {
   "name": "@synerty/peek-web-ns",
   "description": "This module enables the common code for a angular-cli and nativescript app",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "license": "MIT",
   "angular-cli": {},
   "repository": {
@@ -9,8 +9,7 @@
     "url": "git+https://github.com/Synerty/peek-web-ns.git"
   },
   "private": false,
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@angular/common": "^2.4.0",
     "@angular/core": "^2.4.0",
