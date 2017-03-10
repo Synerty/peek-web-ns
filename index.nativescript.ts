@@ -1,12 +1,5 @@
-/**
- * Created by peek on 9/01/17.
- */
 
-/*
- * This doesn't work, it's getting compiler=null when it's used from this NPM package.
- * If you copy the module-loader.ns.factory into the project, it works.
- */
-export {PeekModuleFactoryLoader} from "./src/peek-web-ns/factories/module-loader.ns.factory";
-
-
+export {DeviceInfoService} from "./src/peek-web-ns/services/device-info.interface";
 export {DeviceInfoNsService} from "./src/peek-web-ns/services/device-info-ns.service";
+export {PeekCoreConfigService} from "./src/peek-web-ns/services/peek-core-config.service";
+export {PeekModuleFactory} from "./src/peek-web-ns/factories/peek-module-ns.factory";

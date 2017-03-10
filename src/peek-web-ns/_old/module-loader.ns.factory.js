@@ -42,4 +42,4 @@ exports.PeekModuleFactoryLoader = PeekModuleFactoryLoader;
 function getAbsolutePath(relativePath) {
     return file_system_1.path.normalize(file_system_1.path.join(file_system_1.knownFolders.currentApp().path, relativePath));
 }
-//# sourceMappingURL=/home/peek/project/peek-web-ns/src/peek-web-ns/factories/module-loader.ns.factory.js.map
+//# sourceMappingURL=/home/peek/project/peek-web-ns/src/peek-web-ns/_old/module-loader.ns.factory.js.map

@@ -9,4 +9,4 @@ function PeekComponent(metadata) {
     };
 }
 exports.PeekComponent = PeekComponent;
-//# sourceMappingURL=/home/peek/project/peek-web-ns/src/peek-web-ns/decorators/peek-component-ts.js.map
+//# sourceMappingURL=/home/peek/project/peek-web-ns/src/peek-web-ns/_old/decorators/peek-component-ts.js.map

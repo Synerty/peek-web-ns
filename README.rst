@@ -37,9 +37,9 @@ add the path and replace .web.html with .ns.html.
 
 ::
 
-    import {PeekComponent} from "@synerty/peek-web-ns";
+    import {Component} from "@angular/core";
 
-    @PeekComponent({
+    @Component({
         selector: "peek-main-home",
         templateUrl: 'main-home.component.web.html',
         moduleFilename : module.filename

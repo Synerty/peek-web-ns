@@ -2,7 +2,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var peek_view_broker_service_1 = require("../services/peek-view-broker.service");
+var peek_view_broker_service_1 = require("../peek-view-broker.service");
 var _reflect = Reflect;
 var DecoratorUtils = (function () {
     function DecoratorUtils() {
@@ -23,4 +23,4 @@ var DecoratorUtils = (function () {
     return DecoratorUtils;
 }());
 exports.DecoratorUtils = DecoratorUtils;
-//# sourceMappingURL=/home/peek/project/peek-web-ns/src/peek-web-ns/decorators/utils.js.map
+//# sourceMappingURL=/home/peek/project/peek-web-ns/src/peek-web-ns/_old/decorators/utils.js.map

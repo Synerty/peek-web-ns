@@ -1,7 +1,7 @@
 // http://angularjs.blogspot.com.au/2016/03/code-reuse-in-angular-2-native-mobile.html
 
 import {Component} from "@angular/core";
-import {PeekViewBrokerService} from "../services/peek-view-broker.service";
+import {PeekViewBrokerService} from "../peek-view-broker.service";
 
 const _reflect: any = Reflect;
 

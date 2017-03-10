@@ -1,21 +1,27 @@
 {
-    "compilerOptions": {
-        "baseUrl": "",
-        "declaration": false,
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "noEmitOnError": false,
-        "lib": [
-            "es6",
-            "dom"
-        ],
-        "mapRoot": "./",
-        "sourceMap": true,
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "target": "es5",
-        "typeRoots": [
-            "../node_modules/@types"
-        ]
-    }
+  "compilerOptions": {
+    "baseUrl": "",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noEmitOnError": false,
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "mapRoot": "./",
+    "sourceMap": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es5",
+    "typeRoots": [
+      "../node_modules/@types"
+    ],
+    "types": []
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/e2e"
+  ]
 }
