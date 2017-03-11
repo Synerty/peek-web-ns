@@ -7,6 +7,12 @@ var nativescript_ngx_fonticon_1 = require("nativescript-ngx-fonticon");
 var PeekModuleFactory = (function () {
     function PeekModuleFactory() {
     }
+    /**
+     * Create a new sound object, that can be played.
+     */
+    PeekModuleFactory.createSound = function (soundFilePath) {
+        return new Audio(soundFilePath);
+    };
     return PeekModuleFactory;
 }());
 /**

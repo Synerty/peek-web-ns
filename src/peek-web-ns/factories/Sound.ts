@@ -1,0 +1,3 @@
+export interface Sound {
+    play();
+}

@@ -3,9 +3,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var forms_1 = require("@angular/forms");
 var router_1 = require("@angular/router");
 var angular2_font_awesome_1 = require("angular2-font-awesome/angular2-font-awesome");
+var TNSSound = require("nativescript-sound");
 var PeekModuleFactory = (function () {
     function PeekModuleFactory() {
     }
+    /**
+     * Create a new sound object, that can be played.
+     */
+    PeekModuleFactory.createSound = function (soundFilePath) {
+        return TNSSound.create('~' + soundFilePath);
+    };
     return PeekModuleFactory;
 }());
 /**
