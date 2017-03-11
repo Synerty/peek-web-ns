@@ -1,9 +1,9 @@
 import {FormsModule} from "@angular/forms";
 
 
-let NsMod = require("nativescript-angular")["NativeScriptModule"];
-let NsFormMod = require("nativescript-angular/forms")["NativeScriptFormsModule"];
-let NsRouterMod = require("nativescript-angular")["NativeScriptRouterModule"];
+import {NativeScriptModule, NativeScriptRouterModule} from "nativescript-angular";
+import {NativeScriptFormsModule} from "nativescript-angular/forms";
+import {TNSFontIconModule} from "nativescript-ngx-fonticon";
 
 export class PeekModuleFactory {
 
@@ -11,12 +11,15 @@ export class PeekModuleFactory {
     /**
      * Provide a cross platform Browser module
      */
-    static readonly FormsModules = [FormsModule, NsMod, NsFormMod];
+    static readonly FormsModules = [
+        FormsModule, NativeScriptModule, NativeScriptFormsModule,
+        TNSFontIconModule
+    ];
 
     /**
      * Provide a cross platform Router module
      */
-    static readonly RouterModule = NsRouterMod;
+    static readonly RouterModule = NativeScriptRouterModule;
 
 }
 
