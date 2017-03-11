@@ -6,7 +6,8 @@ import {NativeScriptFormsModule} from "nativescript-angular/forms";
 import {TNSFontIconModule} from "nativescript-ngx-fonticon";
 import {Sound} from "./Sound";
 
-import * as TNSSound from "nativescript-sound";
+// import * as TNSSound from "nativescript-sound";
+let TNSSound = require("nativescript-sound");
 
 export class PeekModuleFactory {
 
