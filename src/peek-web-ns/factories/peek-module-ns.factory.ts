@@ -1,7 +1,8 @@
 import {FormsModule} from "@angular/forms";
 
 
-import {NativeScriptModule, NativeScriptRouterModule} from "nativescript-angular";
+import {NativeScriptModule} from "nativescript-angular/nativescript.module";
+import {NativeScriptRouterModule} from "nativescript-angular";
 import {NativeScriptFormsModule} from "nativescript-angular/forms";
 import {TNSFontIconModule} from "nativescript-ngx-fonticon";
 import {Sound} from "./Sound";
